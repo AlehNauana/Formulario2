@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário 1</title>
+    <style>
+        body{
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%;
+            margin-block-end: 5%;
+            border-top: 1.9px solid #000000;
+            border-block-end: 1.9px solid #000000;
+            border-left: 1.9px solid #000000;
+            border-right: 1.9px solid #000000;
+        }
+    </style>
+
+</head>
+<body>
+
+    <br><div style="border-top: 1.9px solid #000000;
+    border-block-end: 1.9px solid #000000;
+    border-left: 1.9px solid #000000;
+    border-right: 1.9px solid #000000;">
+    <h1>Informações Pessoais</h1>
+    <form action="form_enviado.html" method="post"> 
+
+    <br> Usuário: <input type="text" name="user" required="true"><br><br>
+    Senha: <input name="senha" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="true"><br>
+    <em>*No mínimo 8 dígitos contento maiúsculas, minísculas e numerais</em><br><br>
+    Data de Nascimento: <input name="nascimento" type="date" placeholder="dd/mm/aaaa"><br><br>
+    Gênero: <br><br>
+    <input type="radio" name="sexo" id="masculino" value="Masculino">
+    <label for="masculino">Masculino</label><br><br>
+    <input type="radio" name="sexo" id="feminino" value="feminino">
+    <label for="feminino">Feminino</label><br><br>
+    </div>
+
+    <br><div style="border-top: 1.9px solid #000000;
+    border-block-end: 1.9px solid #000000;
+    border-left: 1.9px solid #000000;
+    border-right: 1.9px solid #000000;">
+    <h1>Informações Profissionais</h1>
+    <p>Conhecimentos</p>
+    <input name="java" type="checkbox">Java<br>
+    <input name="html" type="checkbox">HTML<br>
+    <input name="css" type="checkbox">CSS<br>
+    <input name="php" type="checkbox">PHP<br>
+
+    <p>Currículo:</p>
+    <input name="arquivo" type="file" value="Escolher arquivo"><br><br>
+    <input name="envio" type="submit" value="Enviar">
+    <input name="limpa" type="reset" value="Limpar">
+
+    Inclua aqui sua pretensão salarial e profissional: <br><br>
+    <textarea name="comentario" cols="100" rows="10">Aprenda PHP no CTI!</textarea>
+    </form>
+    </div>
+    
+</body>
+</html>
